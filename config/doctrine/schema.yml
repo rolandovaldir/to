@@ -1,0 +1,47 @@
+actAs:
+  Signable:
+    created:
+      name: created_by
+      type: integer
+      onUpdate: CASCADE
+      onDelete: SET NULL
+      options:
+        notnull: true
+        default: 1
+    updated:
+      name: updated_by
+      type: string
+      
+Producto:
+  actAs: [Timestampable]
+  columns:
+    nombre:           {type: string(250), notnull: true}
+    modelo:           {type: string(250)}
+    marca:            {type: string(250)}
+    detalle:          {type: string(250)}
+    costo:            {type: integer, notnull: true}
+    clasificacion_id: {type: integer, notnull: true}
+    stock:            {type: boolean, default: false}
+
+Factura:
+  actAs: [Timestampable]
+  columns:
+    razon_social:        {type: string(250), notnull: true}
+    nit:                 {type: string(12), notnull: true}
+    numero:              {type: integer, notnull: true}
+    numero_autorizacion: {type: integer, notnull: true}
+    fecha:               {type: date, notnull: true}
+    importe_total:       {type: integer}
+    codigo_control:      {type: string(250), notnull: true}
+  relations:
+    Item: {local: id, foreign: factura_id, type: many, foreignAlias: Factura}
+
+Item:
+  actAs: [Timestampable]
+  columns:
+    factura_id:      {type: integer, notnull: true}
+    detalle:         {type: string(250), notnull: true}
+    precio_unitario: {type: integer, notnull: true}
+    cantidad:        {type: integer, notnull: true}
+  relations:
+    Factura: {local: factura_id, foreign: id, type: one, foreignAlias: Items}
