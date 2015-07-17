@@ -1,0 +1,8 @@
+#.gitignore
+/cache/
+/log/
+/nbproject/
+/test/
+/web/uploads/
+/web/uploads/fotos_personas/
+*~
