@@ -13,27 +13,35 @@ abstract class BaseProductoFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'nombre'           => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'modelo'           => new sfWidgetFormFilterInput(),
-      'marca'            => new sfWidgetFormFilterInput(),
-      'detalle'          => new sfWidgetFormFilterInput(),
-      'costo'            => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'clasificacion_id' => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'stock'            => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
-      'created_at'       => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
-      'updated_at'       => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'nota_venta_id'        => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('NotaVenta'), 'add_empty' => true)),
+      'nombre'               => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'modelo'               => new sfWidgetFormFilterInput(),
+      'marca'                => new sfWidgetFormFilterInput(),
+      'detalle'              => new sfWidgetFormFilterInput(),
+      'costo'                => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'clasificacion_id'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'sub_clasificacion_id' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'stock'                => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'created_at'           => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'updated_at'           => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'created_by'           => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Creator'), 'add_empty' => true)),
+      'updated_by'           => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Updator'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
-      'nombre'           => new sfValidatorPass(array('required' => false)),
-      'modelo'           => new sfValidatorPass(array('required' => false)),
-      'marca'            => new sfValidatorPass(array('required' => false)),
-      'detalle'          => new sfValidatorPass(array('required' => false)),
-      'costo'            => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
-      'clasificacion_id' => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
-      'stock'            => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
-      'created_at'       => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
-      'updated_at'       => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
+      'nota_venta_id'        => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('NotaVenta'), 'column' => 'id')),
+      'nombre'               => new sfValidatorPass(array('required' => false)),
+      'modelo'               => new sfValidatorPass(array('required' => false)),
+      'marca'                => new sfValidatorPass(array('required' => false)),
+      'detalle'              => new sfValidatorPass(array('required' => false)),
+      'costo'                => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'clasificacion_id'     => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'sub_clasificacion_id' => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'stock'                => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'created_at'           => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
+      'updated_at'           => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
+      'created_by'           => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Creator'), 'column' => 'id')),
+      'updated_by'           => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Updator'), 'column' => 'id')),
     ));
 
     $this->widgetSchema->setNameFormat('producto_filters[%s]');
@@ -53,16 +61,20 @@ abstract class BaseProductoFormFilter extends BaseFormFilterDoctrine
   public function getFields()
   {
     return array(
-      'id'               => 'Number',
-      'nombre'           => 'Text',
-      'modelo'           => 'Text',
-      'marca'            => 'Text',
-      'detalle'          => 'Text',
-      'costo'            => 'Number',
-      'clasificacion_id' => 'Number',
-      'stock'            => 'Boolean',
-      'created_at'       => 'Date',
-      'updated_at'       => 'Date',
+      'id'                   => 'Number',
+      'nota_venta_id'        => 'ForeignKey',
+      'nombre'               => 'Text',
+      'modelo'               => 'Text',
+      'marca'                => 'Text',
+      'detalle'              => 'Text',
+      'costo'                => 'Number',
+      'clasificacion_id'     => 'Number',
+      'sub_clasificacion_id' => 'Number',
+      'stock'                => 'Boolean',
+      'created_at'           => 'Date',
+      'updated_at'           => 'Date',
+      'created_by'           => 'ForeignKey',
+      'updated_by'           => 'ForeignKey',
     );
   }
 }

@@ -1,47 +1,215 @@
-actAs:
-  Signable:
-    created:
-      name: created_by
-      type: integer
-      onUpdate: CASCADE
-      onDelete: SET NULL
-      options:
-        notnull: true
-        default: 1
-    updated:
-      name: updated_by
-      type: string
-      
-Producto:
-  actAs: [Timestampable]
+# Persona
+Persona:
+  actAs: [Timestampable, Signable]
   columns:
-    nombre:           {type: string(250), notnull: true}
-    modelo:           {type: string(250)}
-    marca:            {type: string(250)}
-    detalle:          {type: string(250)}
-    costo:            {type: integer, notnull: true}
-    clasificacion_id: {type: integer, notnull: true}
-    stock:            {type: boolean, default: false}
+    foto:                     {type: string(150), default: null}
+    nombres:                  {type: string(150), notnull: true}
+    ap_paterno:               {type: string(150)}
+    ap_materno:               {type: string(150)}
+    pais_origen_id:           {type: integer}
+    num_documento_identidad:  {type: string(20), notnull: false}
+    expedido_id:              {type: integer}
+    tipo_documento_identidad: {type: enum, values: [CI, DNI, PASAPORTE], notnull: false, default: null}
+    fecha_nacimiento:         {type: date}
+    fecha_fallecimiento:      {type: date}
+    lugar_nacimiento_id:      {type: integer}
+    sexo:                     {type: enum, values: [M, F]}
+    direccion_localidad_id:   {type: integer}
+    zona:                     {type: string(150)}
+    direccion:                {type: string(250)}
+    direccion_numero:         {type: string(50)}
+    email:                    {type: string(150)}
+    telefono:                 {type: string(50)}
+    celular:                  {type: string(50)}
+    fallecido:                {type: boolean, default: false}
+  relations:
+    Pais:                   {local: pais_origen_id, foreign: id, foreignAlias: Personas}
+    Expedido:               {local: expedido_id, foreign: id, type: one, foreignAlias: Personas, class: Departamento}
+    LugarNacimiento:        {local: lugar_nacimiento_id, foreign: id, type: one, foreignAlias: Personas, class: Localidad}
+    DireccionLocalidad:     {local: direccion_localidad_id, foreign: id, type: one, foreignAlias: Personas, class: Localidad}
 
-Factura:
-  actAs: [Timestampable]
+# Empresa, representante legal, 
+Empresa:
+  actAs: [Timestampable, Signable]
+  columns:
+    razon_social:                 {type: string(500), notnull: true}
+    sigla:                        {type: string(250), default: null}
+    tipo_constitucion_empresa_id: {type: integer, notnull: true}
+    fecha_constitucion:           {type: date, default: null}
+    fecha_inicio_actividades:     {type: date, default: null}
+    numero_doc_constitucion:      {type: string(50), default: null}
+    fecha_doc_constitucion:       {type: date, default: null}
+    actividad_economica_id:       {type: integer, notnull: true}
+    nit:                          {type: string(20), default: null}
+    tipo_dependencia:             {type: enum, values: [OFICINA PRINCIPAL, SUCURSAL], notnull: true}
+    web:                          {type: string(150), default: null}
+    is_active:                    {type: boolean, default: true}
+    user_id:                      {type: integer, notnull: true}
+  relations:
+    TipoConstitucionEmpresa: {local: tipo_constitucion_empresa_id, foreign: id, type: one, foreignAlias: Empresas}
+    ActividadEconomica:      {local: actividad_economica_id, foreign: id, type: one, foreignAlias: Empresas}
+    DomicilioLegal:          {onDelete: CASCADE, local: id, foreign: empresa_id, type: one, foreignAlias: Empresa}
+    RepresentanteLegal:      {onDelete: CASCADE, local: id, foreign: empresa_id, type: one, foreignAlias: Empresa}
+    Empresas:                {onDelete: CASCADE, class: Empresa, local: sucursal_id, foreign: oficina_principal_id, refClass: OficinaPrincipalSucursal, foreignAlias: Empresas}
+    Sucursales:              {class: Empresa, local: oficina_principal_id, foreign: sucursal_id, refClass: OficinaPrincipalSucursal, foreignAlias: Sucursales}
+    sfGuardUser:             {local: user_id, foreign: id, type: one, foreignAlias: Empresas}
+
+RepresentanteLegal:
+  actAs: [Timestampable, Signable]
+  columns:
+    persona_id:             {type: integer, notnull: true}
+    empresa_id:             {type: integer, notnull: true}
+    num_testimonio_poder:   {type: string(20), notnull: false}
+    fecha_testimonio_poder: {type: date, notnull: false}
+    is_active:              {type: boolean, default: true}
+  relations:
+    Persona: {onDelete: CASCADE, local: persona_id, foreign: id, type: one, foreignAlias: RepresentanteLegal}
+    Empresa: {onDelete: CASCADE, local: empresa_id, foreign: id, type: one, foreignAlias: RepresentanteLegal}
+
+OficinaPrincipalSucursal:
+  actAs: [Timestampable, Signable]
+  columns:
+    oficina_principal_id: {type: integer, primary: true}
+    sucursal_id:          {type: integer, primary: true}
+  relations:
+    OficinaPrincipal: {onDelete: CASCADE, local: oficina_principal_id, class: Empresa}
+    Sucursal:         {onDelete: CASCADE, local: sucursal_id, class: Empresa}
+      
+ActividadEconomica:
+  actAs: [Timestampable, Signable]
+  columns:
+    nombre: {type: string(150)}
+    codigo: {type: string(5)}
+      
+TipoConstitucionEmpresa:
+  actAs: [Timestampable, Signable]
+  columns:
+    nombre:    {type: string(150), notnull: true}
+    sigla:     {type: string(5)}
+    codigo:    {type: string(2)}
+    is_active: {type: boolean, default: true}
+      
+DomicilioLegal:
+  actAs: [Timestampable, Signable]
+  columns:
+    empresa_id:   {type: integer, notnull: true}
+    localidad_id: {type: integer, notnull: true}
+    direccion:    {type: string(250), notnull: true}
+    numero:       {type: string(10), notnull: true}
+    edificio:     {type: string(150)}
+    telefono:     {type: string(15)}
+    fax:          {type: string(15)}
+  relations:
+    Empresa:   {local: empresa_id, foreign: id, type: many, foreignAlias: DomicilioLegal}
+    Localidad: {local: localidad_id, foreign: id, type: one, foreignAlias: DomicilioLegal}
+      
+# Producto, factura de compra, factura de venta, item, nota de venta
+
+NotaVenta:
+  actAs: [Timestampable, Signable]
+  columns:
+    cliente: {type: string(150)}
+  relations:
+    Producto: {local: id, foreign: nota_venta_id, type: many, foreignAlias: NotaVenta}
+
+Producto:
+  actAs: [Timestampable, Signable]
+  columns:
+    nota_venta_id:        {type: integer}
+    nombre:               {type: string(250), notnull: true}
+    modelo:               {type: string(250)}
+    marca:                {type: string(250)}
+    detalle:              {type: string(250)}
+    costo:                {type: integer, notnull: true}
+    clasificacion_id:     {type: integer, notnull: true}
+    sub_clasificacion_id: {type: integer, notnull: true}
+    stock:                {type: boolean, default: false}
+  relations:
+    Item:      {local: id, foreign: producto_id, type: many, foreignAlias: Producto}
+    NotaVenta: {local: nota_venta_id, foreign: id, type: many, foreignAlias: Producto}
+
+FacturaCompra:
+  actAs: [Timestampable, Signable]
   columns:
     razon_social:        {type: string(250), notnull: true}
     nit:                 {type: string(12), notnull: true}
     numero:              {type: integer, notnull: true}
     numero_autorizacion: {type: integer, notnull: true}
+    codigo_control:      {type: string(250), notnull: true}
     fecha:               {type: date, notnull: true}
     importe_total:       {type: integer}
-    codigo_control:      {type: string(250), notnull: true}
   relations:
-    Item: {local: id, foreign: factura_id, type: many, foreignAlias: Factura}
+    Item: {local: id, foreign: factura_compra_id, type: many, foreignAlias: FacturaCompra}
+
+FacturaVenta:
+  actAs: [Timestampable, Signable]
+  columns:
+    numero:              {type: integer, notnull: true}
+    numero_autorizacion: {type: integer, notnull: true}
+    fecha:               {type: date, notnull: true}
+  relations:
+    Empresa: {local: id, foreign: empresa_id, type: one, foreignAlias: FacturaVenta}
+    Item:    {local: id, foreign: factura_venta_id, type: many, foreignAlias: FacturaVenta}
 
 Item:
-  actAs: [Timestampable]
+  actAs: [Timestampable, Signable]
   columns:
-    factura_id:      {type: integer, notnull: true}
-    detalle:         {type: string(250), notnull: true}
-    precio_unitario: {type: integer, notnull: true}
-    cantidad:        {type: integer, notnull: true}
+    factura_compra_id: {type: integer}
+    factura_venta_id:  {type: integer}
+    producto_id:       {type: integer}
+    detalle:           {type: string(250), notnull: true}
+    precio_unitario:   {type: integer, notnull: true}
+    cantidad:          {type: integer, notnull: true}
   relations:
-    Factura: {local: factura_id, foreign: id, type: one, foreignAlias: Items}
+    Factura:  {local: factura_id, foreign: id, type: one, foreignAlias: Items}
+    Producto: {local: producto_id, foreign: id, type: one, foreignAlias: Items}
+
+# Pais, departamentos, provincias, localidades, distritos
+Pais:
+  actAs: [Timestampable, Signable]
+  columns:
+    codigo:      {type: string(3)}
+    nombre:      {type: string(150)}
+    continente:  {type: string(150)}
+    region:      {type: string(50)}
+    poblacion:   {type: integer}
+    jefe_estado: {type: string(100)}
+    capital:     {type: string}
+  relations:
+    Persona: {local: id, foreign: pais_origen_id, foreignAlias: Pais}
+
+Departamento:
+  actAs: [Timestampable, Signable]
+  columns:
+    nombre:      {type: string(50), notnull: true}
+    abreviacion: {type: string(3)}
+    codigo:      {type: string(2)}
+  relations:
+    Provincias: {local: id, foreign: seguros_departamento_id, type: many, class: Provincia}
+
+Provincia:
+  actAs: [Timestampable, Signable]
+  columns:
+    seguros_departamento_id: {type: integer, notnull: true}
+    nombre:                  {type: string(50), notnull: true}
+  relations:
+    Departamento: {local: seguros_departamento_id, foreign: id, type: one, foreignAlias: Provincia}
+    Localidades:  {local: id, foreign: seguros_provincia_id, type: many, class: Localidad}
+
+Localidad:
+  actAs: [Timestampable, Signable]
+  columns:
+    seguros_provincia_id: {type: integer, notnull: true}
+    nombre:       {type: string(150), notnull: true}
+    seccion:      {type: string(50)}
+  relations:
+    Provincia: {local: seguros_provincia_id, foreign: id, type: one, foreignAlias: Localidad}
+    Distritos: {local: id, foreign: localidad_id, type: many, class: Distrito}
+
+Distrito:
+  actAs: [Timestampable, Signable]
+  columns:
+    localidad_id: {type: integer, notnull: true}
+    nombre:       {type: string(50), notnull: true}
+  relations:
+    Localidad: {local: localidad_id, foreign: id, type: one, foreignAlias: Distrito}
