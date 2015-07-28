@@ -1,0 +1,37 @@
+Departamento:
+  Departamento_1:
+    codigo: 01
+    nombre: CHUQUISACA
+    abreviacion: CHQ
+  Departamento_2:
+    codigo: 02
+    nombre: LA PAZ
+    abreviacion: LPZ
+  Departamento_3:
+    codigo: 03
+    nombre: COCHABAMBA
+    abreviacion: CBA
+  Departamento_4:
+    codigo: 04
+    nombre: ORURO
+    abreviacion: ORU
+  Departamento_5:
+    codigo: 05
+    nombre: POTOSÍ
+    abreviacion: PSI
+  Departamento_6:
+    codigo: 06
+    nombre: TARIJA
+    abreviacion: TJA
+  Departamento_7:
+    codigo: 07 
+    nombre: SANTA CRUZ
+    abreviacion: SCZ
+  Departamento_8:
+    codigo: 08 
+    nombre: BENI
+    abreviacion: BNI
+  Departamento_9:
+    codigo: 09
+    nombre: PANDO
+    abreviacion: PND

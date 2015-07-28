@@ -26,7 +26,7 @@
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">
-              <img alt="Brand" src="...">
+              <img alt="TakeOff" src="...">
             </a>
 
             <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Rolando Cadima</a></p>
@@ -36,7 +36,8 @@
         </div>
       </nav>
     </header>
-      
+    
+    <div class="container-fluid">
       <?php if ($sf_user->hasFlash('notice')): ?>
         <div class="flash_notice">
           <?php echo $sf_user->getFlash('notice') ?>
@@ -49,10 +50,9 @@
         </div>
       <?php endif; ?>
       
-      <h1>Hello, world!</h1>
-    
       <?php echo $sf_content ?>
-    
+    </div>
+      
     <footer>
       <div class="footer">
         <div class="container">

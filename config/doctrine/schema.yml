@@ -116,6 +116,7 @@ Producto:
   actAs: [Timestampable, Signable]
   columns:
     nota_venta_id:        {type: integer}
+    codigo:               {type: string(15)}
     nombre:               {type: string(250), notnull: true}
     modelo:               {type: string(250)}
     marca:                {type: string(250)}
@@ -123,7 +124,6 @@ Producto:
     costo:                {type: integer, notnull: true}
     clasificacion_id:     {type: integer, notnull: true}
     sub_clasificacion_id: {type: integer, notnull: true}
-    stock:                {type: boolean, default: false}
   relations:
     Item:      {local: id, foreign: producto_id, type: many, foreignAlias: Producto}
     NotaVenta: {local: nota_venta_id, foreign: id, type: many, foreignAlias: Producto}

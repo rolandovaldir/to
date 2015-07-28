@@ -1,0 +1,116 @@
+#\((\d+),\s'([^']+)',\s(\d)\).
+#  Provincia_$1: {nombre: '$2', Departamento: Departamento_$3}
+
+Provincia:
+  Provincia_1: {nombre: 'OROPEZA', Departamento: Departamento_1}
+  Provincia_2: {nombre: 'JUANA AZURDUY DE PADILLA', Departamento: Departamento_1}
+  Provincia_3: {nombre: 'JAIME ZUDÁÑEZ', Departamento: Departamento_1}
+  Provincia_4: {nombre: 'TOMINA', Departamento: Departamento_1}
+  Provincia_5: {nombre: 'HERNANDO SILES', Departamento: Departamento_1}
+  Provincia_6: {nombre: 'YAMPARÁEZ', Departamento: Departamento_1}
+  Provincia_7: {nombre: 'NOR CINTI', Departamento: Departamento_1}
+  Provincia_8: {nombre: 'BELISARIO BOETO', Departamento: Departamento_1}
+  Provincia_9: {nombre: 'SUD CINTI', Departamento: Departamento_1}
+  Provincia_10: {nombre: 'LUIS CALVO', Departamento: Departamento_1}
+  Provincia_11: {nombre: 'PEDRO DOMINGO MURILLO', Departamento: Departamento_2}
+  Provincia_12: {nombre: 'OMASUYOS', Departamento: Departamento_2}
+  Provincia_13: {nombre: 'PACAJES', Departamento: Departamento_2}
+  Provincia_14: {nombre: 'ELIODORO CAMACHO', Departamento: Departamento_2}
+  Provincia_15: {nombre: 'MUÑECAS', Departamento: Departamento_2}
+  Provincia_16: {nombre: 'LARECAJA', Departamento: Departamento_2}
+  Provincia_17: {nombre: 'FRANZ TAMAYO', Departamento: Departamento_2}
+  Provincia_18: {nombre: 'INGAVI', Departamento: Departamento_2}
+  Provincia_19: {nombre: 'LOAYZA', Departamento: Departamento_2}
+  Provincia_20: {nombre: 'INQUISIVI', Departamento: Departamento_2}
+  Provincia_21: {nombre: 'SUD YUNGAS', Departamento: Departamento_2}
+  Provincia_22: {nombre: 'LOS ANDES', Departamento: Departamento_2}
+  Provincia_23: {nombre: 'AROMA', Departamento: Departamento_2}
+  Provincia_24: {nombre: 'NOR YUNGAS', Departamento: Departamento_2}
+  Provincia_25: {nombre: 'ABEL ITURRALDE', Departamento: Departamento_2}
+  Provincia_26: {nombre: 'BAUTISTA SAAVEDRA', Departamento: Departamento_2}
+  Provincia_27: {nombre: 'MANCO KAPAC', Departamento: Departamento_2}
+  Provincia_28: {nombre: 'GUALBERTO VILLARROEL', Departamento: Departamento_2}
+  Provincia_29: {nombre: 'JOSÉ MANUEL PANDO', Departamento: Departamento_2}
+  Provincia_30: {nombre: 'CARANAVI', Departamento: Departamento_2}
+  Provincia_31: {nombre: 'CERCADO', Departamento: Departamento_3}
+  Provincia_32: {nombre: 'NARCISO CAMPERO', Departamento: Departamento_3}
+  Provincia_33: {nombre: 'AYOPAYA', Departamento: Departamento_3}
+  Provincia_34: {nombre: 'ESTEBAN ARCE', Departamento: Departamento_3}
+  Provincia_35: {nombre: 'ARANI', Departamento: Departamento_3}
+  Provincia_36: {nombre: 'ARQUE', Departamento: Departamento_3}
+  Provincia_37: {nombre: 'CAPINOTA', Departamento: Departamento_3}
+  Provincia_38: {nombre: 'GERMÁN JORDÁN', Departamento: Departamento_3}
+  Provincia_39: {nombre: 'QUILLACOLLO', Departamento: Departamento_3}
+  Provincia_40: {nombre: 'CHAPARE', Departamento: Departamento_3}
+  Provincia_41: {nombre: 'TAPACARÍ', Departamento: Departamento_3}
+  Provincia_42: {nombre: 'CARRASCO', Departamento: Departamento_3}
+  Provincia_43: {nombre: 'MIZQUE', Departamento: Departamento_3}
+  Provincia_44: {nombre: 'PUNATA', Departamento: Departamento_3}
+  Provincia_45: {nombre: 'BOLÍVAR', Departamento: Departamento_3}
+  Provincia_46: {nombre: 'TIRAQUE', Departamento: Departamento_3}
+  Provincia_47: {nombre: 'CERCADO', Departamento: Departamento_4}
+  Provincia_48: {nombre: 'EDUARDO AVAROA', Departamento: Departamento_4}
+  Provincia_49: {nombre: 'CARANGAS', Departamento: Departamento_4}
+  Provincia_50: {nombre: 'SAJAMA', Departamento: Departamento_4}
+  Provincia_51: {nombre: 'LITORAL ', Departamento: Departamento_4}
+  Provincia_52: {nombre: 'POOPÓ', Departamento: Departamento_4}
+  Provincia_53: {nombre: 'PANTALEÓN DALENCE', Departamento: Departamento_4}
+  Provincia_54: {nombre: 'LADISLAO CABRERA', Departamento: Departamento_4}
+  Provincia_55: {nombre: 'ATAHUALLPA', Departamento: Departamento_4}
+  Provincia_56: {nombre: 'SAUCARÍ', Departamento: Departamento_4}
+  Provincia_57: {nombre: 'TOMÁS BARRÓN', Departamento: Departamento_4}
+  Provincia_58: {nombre: 'SUD CARANGAS', Departamento: Departamento_4}
+  Provincia_59: {nombre: 'SAN PEDRO DE TOTORA', Departamento: Departamento_4}
+  Provincia_60: {nombre: 'SEBASTIÁN PAGADOR', Departamento: Departamento_4}
+  Provincia_61: {nombre: 'PUERTO DE MEJILLONES', Departamento: Departamento_4}
+  Provincia_62: {nombre: 'NOR CARANGAS', Departamento: Departamento_4}
+  Provincia_63: {nombre: 'TOMÁS FRÍAS', Departamento: Departamento_5}
+  Provincia_64: {nombre: 'RAFAEL BUSTILLO', Departamento: Departamento_5}
+  Provincia_65: {nombre: 'CORNELIO SAAVEDRA', Departamento: Departamento_5}
+  Provincia_66: {nombre: 'CHAYANTA', Departamento: Departamento_5}
+  Provincia_67: {nombre: 'CHARCAS', Departamento: Departamento_5}
+  Provincia_68: {nombre: 'NOR CHICHAS', Departamento: Departamento_5}
+  Provincia_69: {nombre: 'ALONSO DE IBÁÑEZ', Departamento: Departamento_5}
+  Provincia_70: {nombre: 'SUD CHICHAS', Departamento: Departamento_5}
+  Provincia_71: {nombre: 'NOR LÍPEZ', Departamento: Departamento_5}
+  Provincia_72: {nombre: 'SUD LÍPEZ', Departamento: Departamento_5}
+  Provincia_73: {nombre: 'JOSÉ MARÍA LINARES', Departamento: Departamento_5}
+  Provincia_74: {nombre: 'ANTONIO QUIJARRO', Departamento: Departamento_5}
+  Provincia_75: {nombre: 'BERNARDINO BILBAO', Departamento: Departamento_5}
+  Provincia_76: {nombre: 'DANIEL CAMPOS', Departamento: Departamento_5}
+  Provincia_77: {nombre: 'MODESTO OMISTE', Departamento: Departamento_5}
+  Provincia_78: {nombre: 'ENRIQUE BALDIVIESO', Departamento: Departamento_5}
+  Provincia_79: {nombre: 'CERCADO', Departamento: Departamento_6}
+  Provincia_80: {nombre: 'ANICETO ARCE', Departamento: Departamento_6}
+  Provincia_81: {nombre: 'GRAN CHACO', Departamento: Departamento_6}
+  Provincia_82: {nombre: 'JOSÉ MARÍA AVILEZ', Departamento: Departamento_6}
+  Provincia_83: {nombre: 'EUSTAQUIO MÉNDEZ', Departamento: Departamento_6}
+  Provincia_84: {nombre: 'BURNET O´CONNOR', Departamento: Departamento_6}
+  Provincia_85: {nombre: 'ANDRÉS IBÁÑEZ', Departamento: Departamento_7}
+  Provincia_86: {nombre: 'IGNACIO WARNES', Departamento: Departamento_7}
+  Provincia_87: {nombre: 'JOSÉ MIGUEL DE VELASCO', Departamento: Departamento_7}
+  Provincia_88: {nombre: 'ICHILO', Departamento: Departamento_7}
+  Provincia_89: {nombre: 'CHIQUITOS', Departamento: Departamento_7}
+  Provincia_90: {nombre: 'SARA', Departamento: Departamento_7}
+  Provincia_91: {nombre: 'CORDILLERA', Departamento: Departamento_7}
+  Provincia_92: {nombre: 'VALLEGRANDE', Departamento: Departamento_7}
+  Provincia_93: {nombre: 'FLORIDA', Departamento: Departamento_7}
+  Provincia_94: {nombre: 'OBISPO SANTISTEVAN', Departamento: Departamento_7}
+  Provincia_95: {nombre: 'ÑUFLO DE CHÁVEZ', Departamento: Departamento_7}
+  Provincia_96: {nombre: 'ÁNGEL SANDÓVAL', Departamento: Departamento_7}
+  Provincia_97: {nombre: 'MANUEL MARÍA CABALLERO', Departamento: Departamento_7}
+  Provincia_98: {nombre: 'GERMÁN BUSCH', Departamento: Departamento_7}
+  Provincia_99: {nombre: 'GUARAYOS', Departamento: Departamento_7}
+  Provincia_100: {nombre: 'CERCADO', Departamento: Departamento_8}
+  Provincia_101: {nombre: 'VACA DÍEZ', Departamento: Departamento_8}
+  Provincia_102: {nombre: 'JOSÉ BALLIVIÁN', Departamento: Departamento_8}
+  Provincia_103: {nombre: 'YACUMA', Departamento: Departamento_8}
+  Provincia_104: {nombre: 'MOXOS', Departamento: Departamento_8}
+  Provincia_105: {nombre: 'MARBÁN', Departamento: Departamento_8}
+  Provincia_106: {nombre: 'MAMORÉ', Departamento: Departamento_8}
+  Provincia_107: {nombre: 'ITÉNEZ', Departamento: Departamento_8}
+  Provincia_108: {nombre: 'NICOLÁS SUÁREZ', Departamento: Departamento_9}
+  Provincia_109: {nombre: 'MANURIPI', Departamento: Departamento_9}
+  Provincia_110: {nombre: 'MADRE DE DIOS', Departamento: Departamento_9}
+  Provincia_111: {nombre: 'ABUNÁ', Departamento: Departamento_9}
+  Provincia_112: {nombre: 'FEDERICO ROMÁN', Departamento: Departamento_9}

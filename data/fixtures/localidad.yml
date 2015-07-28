@@ -1,0 +1,330 @@
+#\((\d+),\s'([^-]+)\s-\s?([^']+)',\s(\d+)\).
+#  Localidad_$1: {nombre: '$3', seccion: '$2', Provincia: Provincia_$4}
+Localidad:
+  Localidad_1: {nombre: 'SUCRE', seccion: 'SECCIÓN CAPITAL', Provincia: Provincia_1}
+  Localidad_2: {nombre: 'YOTALA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_1}
+  Localidad_3: {nombre: 'POROMA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_1}
+  Localidad_4: {nombre: 'AZURDUY', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_2}
+  Localidad_5: {nombre: 'TARVITA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_2}
+  Localidad_6: {nombre: 'ZUDÁÑEZ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_3}
+  Localidad_7: {nombre: 'PRESTO', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_3}
+  Localidad_8: {nombre: 'MOJOCOYA', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_3}
+  Localidad_9: {nombre: 'ICLA', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_3}
+  Localidad_10: {nombre: 'PADILLA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_4}
+  Localidad_11: {nombre: 'TOMINA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_4}
+  Localidad_12: {nombre: 'SOPACHUY', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_4}
+  Localidad_13: {nombre: 'VILLA ALCALÁ', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_4}
+  Localidad_14: {nombre: 'EL VILLAR', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_4}
+  Localidad_15: {nombre: 'MONTEAGUDO', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_5}
+  Localidad_16: {nombre: 'HUACARETA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_5}
+  Localidad_17: {nombre: 'TARABUCO', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_6}
+  Localidad_18: {nombre: 'YAMPARÁEZ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_6}
+  Localidad_19: {nombre: 'CAMARGO', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_7}
+  Localidad_20: {nombre: 'SAN LUCAS', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_7}
+  Localidad_21: {nombre: 'INCAHUASI', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_7}
+  Localidad_22: {nombre: 'VILLA SERRANO', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_8}
+  Localidad_23: {nombre: 'CAMATAQUI (VILLA ABECIA)', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_9}
+  Localidad_24: {nombre: 'CULPINA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_9}
+  Localidad_25: {nombre: 'LAS CARRERAS', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_9}
+  Localidad_26: {nombre: 'VILLA VACA GUZMÁN (MUYUPA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_10}
+  Localidad_27: {nombre: 'HUACAYA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_10}
+  Localidad_28: {nombre: 'MACHARETÍ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_10}
+  Localidad_29: {nombre: 'LA PAZ', seccion: 'SECCIÓN CAPITAL', Provincia: Provincia_11}
+  Localidad_30: {nombre: 'PALCA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_11}
+  Localidad_31: {nombre: 'MECAPACA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_11}
+  Localidad_32: {nombre: 'ACHOCALLA', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_11}
+  Localidad_33: {nombre: 'EL ALTO', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_11}
+  Localidad_34: {nombre: 'ACHACACHI', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_12}
+  Localidad_35: {nombre: 'ANCORAIMES', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_12}
+  Localidad_36: {nombre: 'CORO CORO', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_13}
+  Localidad_37: {nombre: 'CAQUIAVIRI', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_13}
+  Localidad_38: {nombre: 'CALACOTO', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_13}
+  Localidad_39: {nombre: 'COMANCHE', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_13}
+  Localidad_40: {nombre: 'CHARAÑA', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_13}
+  Localidad_41: {nombre: 'WALDO BALLIVIÁN', seccion: 'SEXTA SECCIÓN', Provincia: Provincia_13}
+  Localidad_42: {nombre: 'NAZACARA DE PACAJES', seccion: 'SÉPTIMA SECCIÓN', Provincia: Provincia_13}
+  Localidad_43: {nombre: 'SANTIAGO DE CALLAPA', seccion: 'OCTAVA SECCIÓN', Provincia: Provincia_13}
+  Localidad_44: {nombre: 'PUERTO ACOSTA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_14}
+  Localidad_45: {nombre: 'MOCOMOCO', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_14}
+  Localidad_46: {nombre: 'PUERTO CARABUCO', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_14}
+  Localidad_47: {nombre: 'CHUMA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_15}
+  Localidad_48: {nombre: 'AYATA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_15}
+  Localidad_49: {nombre: 'AUCAPATA', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_15}
+  Localidad_50: {nombre: 'SORATA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_16}
+  Localidad_51: {nombre: 'GUANAY', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_16}
+  Localidad_52: {nombre: 'TACACOMA', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_16}
+  Localidad_53: {nombre: 'QUIABAYA', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_16}
+  Localidad_54: {nombre: 'COMBAYA', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_16}
+  Localidad_55: {nombre: 'TIPUANI', seccion: 'SEXTA SECCIÓN', Provincia: Provincia_16}
+  Localidad_56: {nombre: 'MAPIRI', seccion: 'SÉPTIMA SECCIÓN', Provincia: Provincia_16}
+  Localidad_57: {nombre: 'TEOPONTE', seccion: 'OCTAVA SECCIÓN', Provincia: Provincia_16}
+  Localidad_58: {nombre: 'APOLO', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_17}
+  Localidad_59: {nombre: 'PELECHUCO', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_17}
+  Localidad_60: {nombre: 'VIACHA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_18}
+  Localidad_61: {nombre: 'GUAQUI', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_18}
+  Localidad_62: {nombre: 'TIAHUANACU', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_18}
+  Localidad_63: {nombre: 'DESAGUADERO', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_18}
+  Localidad_64: {nombre: 'SAN ANDRÉS DE MACHACA', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_18}
+  Localidad_65: {nombre: 'JESÚS DE MACHACA', seccion: 'SEXTA SECCIÓN', Provincia: Provincia_18}
+  Localidad_66: {nombre: 'TARACO', seccion: 'SÉPTIMA SECCIÓN', Provincia: Provincia_18}
+  Localidad_67: {nombre: 'LURIBAY', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_19}
+  Localidad_68: {nombre: 'SAPAHAQUI', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_19}
+  Localidad_69: {nombre: 'YACO', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_19}
+  Localidad_70: {nombre: 'MALLA', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_19}
+  Localidad_71: {nombre: 'CAIROMA', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_19}
+  Localidad_72: {nombre: 'INQUISIVI', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_20}
+  Localidad_73: {nombre: 'QUIME', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_20}
+  Localidad_74: {nombre: 'CAJUATA', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_20}
+  Localidad_75: {nombre: 'COLQUIRI', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_20}
+  Localidad_76: {nombre: 'ICHOCA', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_20}
+  Localidad_77: {nombre: 'VILLA LIBERTAD LICOMA', seccion: 'SEXTA SECCIÓN', Provincia: Provincia_20}
+  Localidad_78: {nombre: 'CHULUMANI', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_21}
+  Localidad_79: {nombre: 'IRUPANA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_21}
+  Localidad_80: {nombre: 'YANACACHI', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_21}
+  Localidad_81: {nombre: 'PALOS BLANCOS', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_21}
+  Localidad_82: {nombre: 'LA ASUNTA', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_21}
+  Localidad_83: {nombre: 'PUCARANI', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_22}
+  Localidad_84: {nombre: 'LAJA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_22}
+  Localidad_85: {nombre: 'BATALLAS', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_22}
+  Localidad_86: {nombre: 'PUERTO PÉREZ', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_22}
+  Localidad_87: {nombre: 'SICA SICA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_23}
+  Localidad_88: {nombre: 'UMALA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_23}
+  Localidad_89: {nombre: 'AYO AYO', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_23}
+  Localidad_90: {nombre: 'CALAMARCA', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_23}
+  Localidad_91: {nombre: 'PATACAMAYA', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_23}
+  Localidad_92: {nombre: 'COLQUENCHA', seccion: 'SEXTA SECCIÓN', Provincia: Provincia_23}
+  Localidad_93: {nombre: 'COLLANA', seccion: 'SÉPTIMA SECCIÓN', Provincia: Provincia_23}
+  Localidad_94: {nombre: 'COROICO', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_24}
+  Localidad_95: {nombre: 'CORIPATA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_24}
+  Localidad_96: {nombre: 'IXIAMAS', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_25}
+  Localidad_97: {nombre: 'SAN BUENAVENTURA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_25}
+  Localidad_98: {nombre: 'JUAN JOSÉ PÉREZ (CHARAZA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_26}
+  Localidad_99: {nombre: 'CURVA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_26}
+  Localidad_100: {nombre: 'COPACABANA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_27}
+  Localidad_101: {nombre: 'SAN PEDRO DE TIQUINA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_27}
+  Localidad_102: {nombre: 'TITO YUPANQUI', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_27}
+  Localidad_103: {nombre: 'SAN PEDRO DE CURAHUARA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_28}
+  Localidad_104: {nombre: 'PAPEL PAMPA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_28}
+  Localidad_105: {nombre: 'CHACARILLA', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_28}
+  Localidad_106: {nombre: 'SANTIAGO DE MACHACA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_29}
+  Localidad_107: {nombre: 'CATACORA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_29}
+  Localidad_108: {nombre: 'CARANAVI', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_30}
+  Localidad_109: {nombre: 'COCHABAMBA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_31}
+  Localidad_110: {nombre: 'AIQUILE ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_32}
+  Localidad_111: {nombre: 'PASORAPA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_32}
+  Localidad_112: {nombre: 'OMEREQUE ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_32}
+  Localidad_113: {nombre: 'AYOPAYA (VILLA DE INDEPEND', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_33}
+  Localidad_114: {nombre: 'MOROCHATA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_33}
+  Localidad_115: {nombre: 'TARATA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_34}
+  Localidad_116: {nombre: 'ANZALDO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_34}
+  Localidad_117: {nombre: 'ARBIETO ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_34}
+  Localidad_118: {nombre: 'SACABAMBA ', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_34}
+  Localidad_119: {nombre: 'ARANI ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_35}
+  Localidad_120: {nombre: 'VACAS ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_35}
+  Localidad_121: {nombre: 'ARQUE ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_36}
+  Localidad_122: {nombre: 'TACOPAYA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_36}
+  Localidad_123: {nombre: 'CAPINOTA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_37}
+  Localidad_124: {nombre: 'SANTIVÁÑEZ ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_37}
+  Localidad_125: {nombre: 'SICAYA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_37}
+  Localidad_126: {nombre: 'CLIZA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_38}
+  Localidad_127: {nombre: 'TOCO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_38}
+  Localidad_128: {nombre: 'TOLATA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_38}
+  Localidad_129: {nombre: 'QUILLACOLLO ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_39}
+  Localidad_130: {nombre: 'SIPE SIPE ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_39}
+  Localidad_131: {nombre: 'TIQUIPAYA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_39}
+  Localidad_132: {nombre: 'VINTO ', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_39}
+  Localidad_133: {nombre: 'COLCAPIRHUA ', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_39}
+  Localidad_134: {nombre: 'SACABA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_40}
+  Localidad_135: {nombre: 'COLOMI ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_40}
+  Localidad_136: {nombre: 'VILLA TUNARI ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_40}
+  Localidad_137: {nombre: 'TAPACARÍ ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_41}
+  Localidad_138: {nombre: 'TOTORA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_42}
+  Localidad_139: {nombre: 'POJO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_42}
+  Localidad_140: {nombre: 'POCONA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_42}
+  Localidad_141: {nombre: 'CHIMORÉ ', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_42}
+  Localidad_142: {nombre: 'PUERTO VILLARROEL ', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_42}
+  Localidad_143: {nombre: 'ENTRE RÍOS', seccion: 'SEXTA SECCIÓN', Provincia: Provincia_42}
+  Localidad_144: {nombre: 'MIZQUE ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_43}
+  Localidad_145: {nombre: 'VILA VILA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_43}
+  Localidad_146: {nombre: 'ALALAY ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_43}
+  Localidad_147: {nombre: 'PUNATA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_44}
+  Localidad_148: {nombre: 'VILLA RIVERO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_44}
+  Localidad_149: {nombre: 'SAN BENITO ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_44}
+  Localidad_150: {nombre: 'TACACHI ', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_44}
+  Localidad_151: {nombre: 'CUCHUMUELA ', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_44}
+  Localidad_152: {nombre: 'BOLÍVAR', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_45}
+  Localidad_153: {nombre: 'TIRAQUE', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_46}
+  Localidad_154: {nombre: 'ORURO ', seccion: 'SECCIÓN CAPITAL', Provincia: Provincia_47}
+  Localidad_155: {nombre: 'CARACOLLO', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_47}
+  Localidad_156: {nombre: 'EL CHORO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_47}
+  Localidad_157: {nombre: 'SORACACHI', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_47}
+  Localidad_158: {nombre: 'CHALLAPATA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_48}
+  Localidad_159: {nombre: 'SANTUARIO DE QUILLACAS ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_48}
+  Localidad_160: {nombre: 'CORQUE ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_49}
+  Localidad_161: {nombre: 'CHOQUE COTA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_49}
+  Localidad_162: {nombre: 'CURAHUARA DE CARANGAS ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_50}
+  Localidad_163: {nombre: 'TURCO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_50}
+  Localidad_164: {nombre: 'HUACHACALLA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_51}
+  Localidad_165: {nombre: 'ESCARA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_51}
+  Localidad_166: {nombre: 'CRUZ DE MACHACAMARCA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_51}
+  Localidad_167: {nombre: 'YUNGUYO DE LITORAL ', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_51}
+  Localidad_168: {nombre: 'ESMERALDA ', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_51}
+  Localidad_169: {nombre: 'POOPÓ ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_52}
+  Localidad_170: {nombre: 'PAZÑA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_52}
+  Localidad_171: {nombre: 'ANTEQUERA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_52}
+  Localidad_172: {nombre: 'HUANUNI ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_53}
+  Localidad_173: {nombre: 'MACHACAMARCA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_53}
+  Localidad_174: {nombre: 'SALINAS DE GARCI MENDOZA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_54}
+  Localidad_175: {nombre: 'PAMPA AULLAGAS ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_54}
+  Localidad_176: {nombre: 'SABAYA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_55}
+  Localidad_177: {nombre: 'COIPASA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_55}
+  Localidad_178: {nombre: 'CHIPAYA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_55}
+  Localidad_179: {nombre: 'TOLEDO ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_56}
+  Localidad_180: {nombre: 'EUCALIPTUS ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_57}
+  Localidad_181: {nombre: 'SANTIAGO DE ANDAMARCA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_58}
+  Localidad_182: {nombre: 'BELÉN DE ANDAMARCA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_58}
+  Localidad_183: {nombre: 'TOTORA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_59}
+  Localidad_184: {nombre: 'SANTIAGO DE HUARI ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_60}
+  Localidad_185: {nombre: 'LA RIVERA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_61}
+  Localidad_186: {nombre: 'TODOS SANTOS ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_61}
+  Localidad_187: {nombre: 'CARANGAS ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_61}
+  Localidad_188: {nombre: 'HUAYLLAMARCA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_62}
+  Localidad_189: {nombre: 'POTOSÍ ', seccion: 'SECCIÓN CAPITAL', Provincia: Provincia_63}
+  Localidad_190: {nombre: 'TINGUIPAYA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_63}
+  Localidad_191: {nombre: 'YOCALLA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_63}
+  Localidad_192: {nombre: 'URMIRI ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_63}
+  Localidad_193: {nombre: 'UNCÍA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_64}
+  Localidad_194: {nombre: 'CHAYANTA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_64}
+  Localidad_195: {nombre: 'LLALLAGUA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_64}
+  Localidad_196: {nombre: 'BETANZOS ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_65}
+  Localidad_197: {nombre: 'CHAQUÍ ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_65}
+  Localidad_198: {nombre: 'TACOBAMBA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_65}
+  Localidad_199: {nombre: 'COLQUECHACA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_66}
+  Localidad_200: {nombre: 'RAVELO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_66}
+  Localidad_201: {nombre: 'POCOATA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_66}
+  Localidad_202: {nombre: 'OCURÍ ', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_66}
+  Localidad_203: {nombre: 'SAN PEDRO DE BUENA VISTA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_67}
+  Localidad_204: {nombre: 'TORO TORO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_67}
+  Localidad_205: {nombre: 'COTAGAITA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_68}
+  Localidad_206: {nombre: 'VITICHI ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_68}
+  Localidad_207: {nombre: 'VILLA DE SACACA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_69}
+  Localidad_208: {nombre: 'CARIPUYO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_69}
+  Localidad_209: {nombre: 'TUPIZA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_70}
+  Localidad_210: {nombre: 'ATOCHA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_70}
+  Localidad_211: {nombre: 'COLCHA K ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_71}
+  Localidad_212: {nombre: 'SAN PEDRO DE QUEMES ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_71}
+  Localidad_213: {nombre: 'SAN PABLO DE LÍPEZ ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_72}
+  Localidad_214: {nombre: 'MOJINETE ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_72}
+  Localidad_215: {nombre: 'SAN ANTONIO DE ESMORUCO ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_72}
+  Localidad_216: {nombre: 'PUNA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_73}
+  Localidad_217: {nombre: 'CAIZA D', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_73}
+  Localidad_218: {nombre: 'UYUNI ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_74}
+  Localidad_219: {nombre: 'TOMAVE ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_74}
+  Localidad_220: {nombre: 'PORCO ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_74}
+  Localidad_221: {nombre: 'ARAMPAMPA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_75}
+  Localidad_222: {nombre: 'ACASIO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_75}
+  Localidad_223: {nombre: 'LLICA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_76}
+  Localidad_224: {nombre: 'TAHUA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_76}
+  Localidad_225: {nombre: 'VILLAZÓN ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_77}
+  Localidad_226: {nombre: 'SAN AGUSTÍN ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_78}
+  Localidad_227: {nombre: 'TARIJA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_79}
+  Localidad_228: {nombre: 'PADCAYA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_80}
+  Localidad_229: {nombre: 'BERMEJO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_80}
+  Localidad_230: {nombre: 'YACUIBA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_81}
+  Localidad_231: {nombre: 'CARAPARÍ ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_81}
+  Localidad_232: {nombre: 'VILLAMONTES ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_81}
+  Localidad_233: {nombre: 'URIONDO ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_82}
+  Localidad_234: {nombre: 'YUNCHARÁ ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_82}
+  Localidad_235: {nombre: 'VILLA SAN LORENZO ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_83}
+  Localidad_236: {nombre: 'EL PUENTE ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_83}
+  Localidad_237: {nombre: ' ENTRE RÍOS', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_84}
+  Localidad_238: {nombre: 'SANTA CRUZ DE LA SIERRA', seccion: 'SECCIÓN CAPITAL', Provincia: Provincia_85}
+  Localidad_239: {nombre: 'COTOCA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_85}
+  Localidad_240: {nombre: 'PORONGO', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_85}
+  Localidad_241: {nombre: 'LA GUARDIA', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_85}
+  Localidad_242: {nombre: 'EL TORNO', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_85}
+  Localidad_243: {nombre: 'WARNES', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_86}
+  Localidad_244: {nombre: 'OKINAWA UNO', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_86}
+  Localidad_245: {nombre: 'SAN IGNACIO DE VELASCO', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_87}
+  Localidad_246: {nombre: 'SAN MIGUEL DE VELASCO', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_87}
+  Localidad_247: {nombre: 'SAN RAFAEL', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_87}
+  Localidad_248: {nombre: 'BUENA VISTA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_88}
+  Localidad_249: {nombre: 'SAN CARLOS', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_88}
+  Localidad_250: {nombre: 'YAPACANÍ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_88}
+  Localidad_251: {nombre: 'SAN JUAN DE YAPACANÍ', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_88}
+  Localidad_252: {nombre: 'SAN JOSÉ DE CHIQUITOS', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_89}
+  Localidad_253: {nombre: 'PAILÓN', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_89}
+  Localidad_254: {nombre: 'ROBORÉ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_89}
+  Localidad_255: {nombre: 'PORTACHUELO', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_90}
+  Localidad_256: {nombre: 'SANTA ROSA DEL SARA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_90}
+  Localidad_257: {nombre: 'COLPA BÉLGICA', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_90}
+  Localidad_258: {nombre: 'LAGUNILLAS', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_91}
+  Localidad_259: {nombre: 'CHARAGUA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_91}
+  Localidad_260: {nombre: 'CABEZAS', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_91}
+  Localidad_261: {nombre: 'CUEVO', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_91}
+  Localidad_262: {nombre: 'GUTIÉRREZ', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_91}
+  Localidad_263: {nombre: 'CAMIRI', seccion: 'SEXTA SECCIÓN', Provincia: Provincia_91}
+  Localidad_264: {nombre: 'BOYUIBE', seccion: 'SÉPTIMA SECCIÓN', Provincia: Provincia_91}
+  Localidad_265: {nombre: 'VALLEGRANDE', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_92}
+  Localidad_266: {nombre: 'TRIGAL', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_92}
+  Localidad_267: {nombre: 'MORO MORO', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_92}
+  Localidad_268: {nombre: 'POSTRER VALLE', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_92}
+  Localidad_269: {nombre: 'PUCARA', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_92}
+  Localidad_270: {nombre: 'SAMAIPATA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_93}
+  Localidad_271: {nombre: 'PAMPA GRANDE', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_93}
+  Localidad_272: {nombre: 'MAIRANA', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_93}
+  Localidad_273: {nombre: 'QUIRUSILLAS', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_93}
+  Localidad_274: {nombre: 'MONTERO', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_94}
+  Localidad_275: {nombre: 'SAAVEDRA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_94}
+  Localidad_276: {nombre: 'MINEROS ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_94}
+  Localidad_277: {nombre: 'FERNÁNDEZ ALONSO', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_94}
+  Localidad_278: {nombre: 'SAN PEDRO', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_94}
+  Localidad_279: {nombre: 'CONCEPCIÓN', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_95}
+  Localidad_280: {nombre: 'SAN JAVIER', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_95}
+  Localidad_281: {nombre: 'SAN RAMÓN', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_95}
+  Localidad_282: {nombre: 'SAN JULIÁN', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_95}
+  Localidad_283: {nombre: 'SAN ANTONIO DE LOMERÍO', seccion: 'QUINTA SECCIÓN', Provincia: Provincia_95}
+  Localidad_284: {nombre: 'CUATRO CAÑADAS', seccion: 'SEXTA SECCIÓN', Provincia: Provincia_95}
+  Localidad_285: {nombre: 'SAN MATÍAS', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_96}
+  Localidad_286: {nombre: 'COMARAPA', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_97}
+  Localidad_287: {nombre: 'SAIPINA', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_97}
+  Localidad_288: {nombre: 'PUERTO SUÁREZ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_98}
+  Localidad_289: {nombre: 'PUERTO QUIJARRO', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_98}
+  Localidad_290: {nombre: 'CARMEN RIVERO TÓRREZ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_98}
+  Localidad_291: {nombre: 'ASCENSIÓN DE GUARAYOS', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_99}
+  Localidad_292: {nombre: 'URUBICHÁ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_99}
+  Localidad_293: {nombre: 'EL PUENTE', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_99}
+  Localidad_294: {nombre: 'TRINIDAD ', seccion: 'SECCIÓN CAPITAL', Provincia: Provincia_100}
+  Localidad_295: {nombre: 'SAN JAVIER', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_100}
+  Localidad_296: {nombre: 'RIBERALTA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_101}
+  Localidad_297: {nombre: 'GUAYARAMERÍN ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_101}
+  Localidad_298: {nombre: 'REYES ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_102}
+  Localidad_299: {nombre: 'SAN BORJA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_102}
+  Localidad_300: {nombre: 'SANTA ROSA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_102}
+  Localidad_301: {nombre: 'RURRENABAQUE ', seccion: 'CUARTA SECCIÓN', Provincia: Provincia_102}
+  Localidad_302: {nombre: 'SANTA ANA DEL YACUMA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_103}
+  Localidad_303: {nombre: 'EXALTACIÓN ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_103}
+  Localidad_304: {nombre: 'SAN IGNACIO ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_104}
+  Localidad_305: {nombre: 'LORETO ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_105}
+  Localidad_306: {nombre: 'SAN ANDRÉS ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_105}
+  Localidad_307: {nombre: 'SAN JOAQUÍN ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_106}
+  Localidad_308: {nombre: 'SAN RAMÓN ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_106}
+  Localidad_309: {nombre: 'PUERTO SILES ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_106}
+  Localidad_310: {nombre: 'MAGDALENA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_107}
+  Localidad_311: {nombre: 'BAURES ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_107}
+  Localidad_312: {nombre: 'HUACARAJE ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_107}
+  Localidad_313: {nombre: 'COBIJA ', seccion: 'SECCIÓN CAPITAL', Provincia: Provincia_108}
+  Localidad_314: {nombre: 'PORVENIR', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_108}
+  Localidad_315: {nombre: 'BOLPEBRA ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_108}
+  Localidad_316: {nombre: 'BELLA FLOR ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_108}
+  Localidad_317: {nombre: 'PUERTO RICO ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_109}
+  Localidad_318: {nombre: 'SAN PEDRO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_109}
+  Localidad_319: {nombre: 'FILADELFIA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_109}
+  Localidad_320: {nombre: 'PUERTO GONZALO MORENO ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_110}
+  Localidad_321: {nombre: 'SAN LORENZO ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_110}
+  Localidad_322: {nombre: 'SENA ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_110}
+  Localidad_323: {nombre: 'SANTA ROSA DEL ABUNÁ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_111}
+  Localidad_324: {nombre: 'INGAVI ', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_111}
+  Localidad_325: {nombre: 'NUEVA ESPERANZA ', seccion: 'PRIMERA SECCIÓN', Provincia: Provincia_112}
+  Localidad_326: {nombre: 'VILLA NUEVA (LOMA ALTA)', seccion: 'SEGUNDA SECCIÓN', Provincia: Provincia_112}
+  Localidad_327: {nombre: 'SANTOS MERCADO ', seccion: 'TERCERA SECCIÓN', Provincia: Provincia_112}

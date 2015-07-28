@@ -17,6 +17,7 @@ abstract class BaseProductoForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'id'                   => new sfWidgetFormInputHidden(),
       'nota_venta_id'        => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('NotaVenta'), 'add_empty' => true)),
+      'codigo'               => new sfWidgetFormInputText(),
       'nombre'               => new sfWidgetFormInputText(),
       'modelo'               => new sfWidgetFormInputText(),
       'marca'                => new sfWidgetFormInputText(),
@@ -24,7 +25,6 @@ abstract class BaseProductoForm extends BaseFormDoctrine
       'costo'                => new sfWidgetFormInputText(),
       'clasificacion_id'     => new sfWidgetFormInputText(),
       'sub_clasificacion_id' => new sfWidgetFormInputText(),
-      'stock'                => new sfWidgetFormInputCheckbox(),
       'created_at'           => new sfWidgetFormDateTime(),
       'updated_at'           => new sfWidgetFormDateTime(),
       'created_by'           => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Creator'), 'add_empty' => true)),
@@ -34,6 +34,7 @@ abstract class BaseProductoForm extends BaseFormDoctrine
     $this->setValidators(array(
       'id'                   => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'nota_venta_id'        => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('NotaVenta'), 'required' => false)),
+      'codigo'               => new sfValidatorString(array('max_length' => 15, 'required' => false)),
       'nombre'               => new sfValidatorString(array('max_length' => 250)),
       'modelo'               => new sfValidatorString(array('max_length' => 250, 'required' => false)),
       'marca'                => new sfValidatorString(array('max_length' => 250, 'required' => false)),
@@ -41,7 +42,6 @@ abstract class BaseProductoForm extends BaseFormDoctrine
       'costo'                => new sfValidatorInteger(),
       'clasificacion_id'     => new sfValidatorInteger(),
       'sub_clasificacion_id' => new sfValidatorInteger(),
-      'stock'                => new sfValidatorBoolean(array('required' => false)),
       'created_at'           => new sfValidatorDateTime(),
       'updated_at'           => new sfValidatorDateTime(),
       'created_by'           => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Creator'), 'required' => false)),
