@@ -16,6 +16,8 @@
  * @property integer $sub_clasificacion_id
  * @property Doctrine_Collection $Item
  * @property Doctrine_Collection $NotaVenta
+ * @property Clasificacion $Clasificacion
+ * @property SubClasificacion $SubClasificacion
  * 
  * @method integer             getNotaVentaId()          Returns the current record's "nota_venta_id" value
  * @method string              getCodigo()               Returns the current record's "codigo" value
@@ -28,6 +30,8 @@
  * @method integer             getSubClasificacionId()   Returns the current record's "sub_clasificacion_id" value
  * @method Doctrine_Collection getItem()                 Returns the current record's "Item" collection
  * @method Doctrine_Collection getNotaVenta()            Returns the current record's "NotaVenta" collection
+ * @method Clasificacion       getClasificacion()        Returns the current record's "Clasificacion" value
+ * @method SubClasificacion    getSubClasificacion()     Returns the current record's "SubClasificacion" value
  * @method Producto            setNotaVentaId()          Sets the current record's "nota_venta_id" value
  * @method Producto            setCodigo()               Sets the current record's "codigo" value
  * @method Producto            setNombre()               Sets the current record's "nombre" value
@@ -39,6 +43,8 @@
  * @method Producto            setSubClasificacionId()   Sets the current record's "sub_clasificacion_id" value
  * @method Producto            setItem()                 Sets the current record's "Item" collection
  * @method Producto            setNotaVenta()            Sets the current record's "NotaVenta" collection
+ * @method Producto            setClasificacion()        Sets the current record's "Clasificacion" value
+ * @method Producto            setSubClasificacion()     Sets the current record's "SubClasificacion" value
  * 
  * @package    takeoff
  * @subpackage model
@@ -97,6 +103,14 @@ abstract class BaseProducto extends sfDoctrineRecord
 
         $this->hasMany('NotaVenta', array(
              'local' => 'nota_venta_id',
+             'foreign' => 'id'));
+
+        $this->hasOne('Clasificacion', array(
+             'local' => 'clasificacion_id',
+             'foreign' => 'id'));
+
+        $this->hasOne('SubClasificacion', array(
+             'local' => 'sub_clasificacion_id',
              'foreign' => 'id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable(array(

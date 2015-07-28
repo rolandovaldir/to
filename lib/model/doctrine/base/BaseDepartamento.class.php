@@ -52,7 +52,7 @@ abstract class BaseDepartamento extends sfDoctrineRecord
         parent::setUp();
         $this->hasMany('Provincia as Provincias', array(
              'local' => 'id',
-             'foreign' => 'seguros_departamento_id'));
+             'foreign' => 'departamento_id'));
 
         $this->hasMany('Persona as Personas', array(
              'local' => 'id',

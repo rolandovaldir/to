@@ -15,23 +15,23 @@ abstract class BaseProvinciaForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id'                      => new sfWidgetFormInputHidden(),
-      'seguros_departamento_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Departamento'), 'add_empty' => false)),
-      'nombre'                  => new sfWidgetFormInputText(),
-      'created_at'              => new sfWidgetFormDateTime(),
-      'updated_at'              => new sfWidgetFormDateTime(),
-      'created_by'              => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Creator'), 'add_empty' => true)),
-      'updated_by'              => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Updator'), 'add_empty' => true)),
+      'id'              => new sfWidgetFormInputHidden(),
+      'departamento_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Departamento'), 'add_empty' => false)),
+      'nombre'          => new sfWidgetFormInputText(),
+      'created_at'      => new sfWidgetFormDateTime(),
+      'updated_at'      => new sfWidgetFormDateTime(),
+      'created_by'      => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Creator'), 'add_empty' => true)),
+      'updated_by'      => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Updator'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
-      'id'                      => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'seguros_departamento_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Departamento'))),
-      'nombre'                  => new sfValidatorString(array('max_length' => 50)),
-      'created_at'              => new sfValidatorDateTime(),
-      'updated_at'              => new sfValidatorDateTime(),
-      'created_by'              => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Creator'), 'required' => false)),
-      'updated_by'              => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Updator'), 'required' => false)),
+      'id'              => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
+      'departamento_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Departamento'))),
+      'nombre'          => new sfValidatorString(array('max_length' => 50)),
+      'created_at'      => new sfValidatorDateTime(),
+      'updated_at'      => new sfValidatorDateTime(),
+      'created_by'      => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Creator'), 'required' => false)),
+      'updated_by'      => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Updator'), 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('provincia[%s]');

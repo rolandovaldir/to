@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Producto
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          producto
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title: Lista de productos
+        batch_actions:  {}
+        actions: {}
+      filter:  
+        display: [codigo, modelo, marca]
+      form:    ~
+      edit:    ~
+      new:     
+        title: Registro de productos
+        actions:
+          _save: ~ 
+          _save_and_add: ~ 

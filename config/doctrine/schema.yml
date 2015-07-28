@@ -125,8 +125,10 @@ Producto:
     clasificacion_id:     {type: integer, notnull: true}
     sub_clasificacion_id: {type: integer, notnull: true}
   relations:
-    Item:      {local: id, foreign: producto_id, type: many, foreignAlias: Producto}
-    NotaVenta: {local: nota_venta_id, foreign: id, type: many, foreignAlias: Producto}
+    Item:             {local: id, foreign: producto_id, type: many, foreignAlias: Producto}
+    NotaVenta:        {local: nota_venta_id, foreign: id, type: many, foreignAlias: Producto}
+    Clasificacion:     {local: clasificacion_id, foreign: id, type: one, foreignAlias: Producto}
+    SubClasificacion: {local: sub_clasificacion_id, foreign: id, type: one, foreignAlias: Producto}
 
 FacturaCompra:
   actAs: [Timestampable, Signable]
@@ -164,6 +166,23 @@ Item:
     Factura:  {local: factura_id, foreign: id, type: one, foreignAlias: Items}
     Producto: {local: producto_id, foreign: id, type: one, foreignAlias: Items}
 
+Clasificacion:
+  actAs: [Timestampable, Signable]
+  columns:
+    codigo:                  {type: string(50), notnull: true}
+    nombre:                  {type: string(50), notnull: true}
+  relations:
+    SubClasificacion: {local: id, foreign: clasificacion_id, type: many, foreignAlias: Clasificacion}
+
+SubClasificacion:
+  actAs: [Timestampable, Signable]
+  columns:
+    clasificacion_id: {type: integer, notnull: true}
+    codigo:           {type: string(50), notnull: true}
+    nombre:           {type: string(50), notnull: true}
+  relations:
+    Clasificacion: {local: clasificacion_id, foreign: id, type: one, foreignAlias: SubClasificaciones}
+    
 # Pais, departamentos, provincias, localidades, distritos
 Pais:
   actAs: [Timestampable, Signable]
@@ -185,25 +204,25 @@ Departamento:
     abreviacion: {type: string(3)}
     codigo:      {type: string(2)}
   relations:
-    Provincias: {local: id, foreign: seguros_departamento_id, type: many, class: Provincia}
+    Provincias: {local: id, foreign: departamento_id, type: many, class: Provincia}
 
 Provincia:
   actAs: [Timestampable, Signable]
   columns:
-    seguros_departamento_id: {type: integer, notnull: true}
+    departamento_id: {type: integer, notnull: true}
     nombre:                  {type: string(50), notnull: true}
   relations:
-    Departamento: {local: seguros_departamento_id, foreign: id, type: one, foreignAlias: Provincia}
-    Localidades:  {local: id, foreign: seguros_provincia_id, type: many, class: Localidad}
+    Departamento: {local: departamento_id, foreign: id, type: one, foreignAlias: Provincia}
+    Localidades:  {local: id, foreign: provincia_id, type: many, class: Localidad}
 
 Localidad:
   actAs: [Timestampable, Signable]
   columns:
-    seguros_provincia_id: {type: integer, notnull: true}
+    provincia_id: {type: integer, notnull: true}
     nombre:       {type: string(150), notnull: true}
     seccion:      {type: string(50)}
   relations:
-    Provincia: {local: seguros_provincia_id, foreign: id, type: one, foreignAlias: Localidad}
+    Provincia: {local: provincia_id, foreign: id, type: one, foreignAlias: Localidad}
     Distritos: {local: id, foreign: localidad_id, type: many, class: Distrito}
 
 Distrito:

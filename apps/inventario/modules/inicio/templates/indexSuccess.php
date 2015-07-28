@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-xs-3">
-    <a href="<?php echo url_for('@homepage') ?>">
+    <a href="<?php echo url_for('@producto_new') ?>">
       <img src="/images/registrando.jpg" class="img-responsive" alt="Registro de productos" />
       Registro de productos
     </a>

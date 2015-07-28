@@ -25,7 +25,7 @@
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="<?php echo url_for('@homepage') ?>">
               <img alt="TakeOff" src="...">
             </a>
 
@@ -56,7 +56,7 @@
     <footer>
       <div class="footer">
         <div class="container">
-          <p class="text-muted">Place sticky footer content here.</p>
+          <p class="text-muted">TakeOff - Soluciones Tecnológicas.</p>
         </div>
       </div>
     </footer>

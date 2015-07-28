@@ -12,5 +12,11 @@ class ProductoFormFilter extends BaseProductoFormFilter
 {
   public function configure()
   {
+    $this->widgetSchema['codigo'] = new sfWidgetFormFilterInput(
+        array('with_empty' => false));
+    $this->widgetSchema['modelo'] = new sfWidgetFormFilterInput(
+        array('with_empty' => false));
+    $this->widgetSchema['marca'] = new sfWidgetFormFilterInput(
+        array('with_empty' => false));
   }
 }
