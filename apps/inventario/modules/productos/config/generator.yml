@@ -20,8 +20,12 @@ generator:
         actions: {}
       filter:  
         display: [codigo, modelo, marca]
-      form:    ~
-      edit:    ~
+      form: ~
+      edit:    
+        title: Editar producto
+        actions:
+          _save: ~ 
+          _list: ~ 
       new:     
         title: Registro de productos
         actions:

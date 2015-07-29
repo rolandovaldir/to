@@ -12,4 +12,8 @@
  */
 class Clasificacion extends BaseClasificacion
 {
+  public function __toString() 
+  {
+    return $this->getNombre();
+  }
 }

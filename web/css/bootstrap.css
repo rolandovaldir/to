@@ -2507,10 +2507,17 @@ legend {
   border-bottom: 1px solid #e5e5e5;
 }
 label {
-  display: inline-block;
+  /* display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: bold;*/
+  color: #666;
+  display: block;
+  float: left;
+  font-weight: normal !important;
+  padding: 0 1em 3px 0;
+  text-align: left;
+  width: 13em;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;

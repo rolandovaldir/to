@@ -1,0 +1,11 @@
+Clasificacion:
+  Clasificacion_1: {nombre: 'PRODUCTOS PARA LA VENTA', codigo: '01'}
+  Clasificacion_2: {nombre: 'BIENES DE USO', codigo: '02'}
+
+SubClasificacion:
+  Sub_clasificacion_1: {nombre: 'CCTV', codigo: '01', Clasificacion: Clasificacion_1}
+  Sub_clasificacion_2: {nombre: 'REDES', codigo: '02', Clasificacion: Clasificacion_1}
+  Sub_clasificacion_3: {nombre: 'COMPUTACION', codigo: '03', Clasificacion: Clasificacion_1}
+  Sub_clasificacion_4: {nombre: 'IMAGING AND PRINTING', codigo: '04', Clasificacion: Clasificacion_1}
+  Sub_clasificacion_5: {nombre: 'MATERIALES', codigo: '05', Clasificacion: Clasificacion_2}
+  Sub_clasificacion_6: {nombre: 'DE CONSUMO', codigo: '06', Clasificacion: Clasificacion_2}

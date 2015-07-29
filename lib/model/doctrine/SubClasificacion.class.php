@@ -12,4 +12,8 @@
  */
 class SubClasificacion extends BaseSubClasificacion
 {
+  public function __toString() 
+  {
+    return $this->getNombre();
+  }
 }

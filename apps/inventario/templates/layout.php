@@ -15,7 +15,7 @@
     <?php include_http_metas() ?>
     <?php include_metas() ?>
     <?php include_stylesheets() ?>
-        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/bootstrap.css" />
         <link rel="stylesheet" href="/css/sticky-footer-navbar.css" />
     <?php include_javascripts() ?>
   </head>

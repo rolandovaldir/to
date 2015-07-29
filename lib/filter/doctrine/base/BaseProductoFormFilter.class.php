@@ -14,6 +14,7 @@ abstract class BaseProductoFormFilter extends BaseFormFilterDoctrine
   {
     $this->setWidgets(array(
       'nota_venta_id'        => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('NotaVenta'), 'add_empty' => true)),
+      'foto'                 => new sfWidgetFormFilterInput(),
       'codigo'               => new sfWidgetFormFilterInput(),
       'nombre'               => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'modelo'               => new sfWidgetFormFilterInput(),
@@ -30,6 +31,7 @@ abstract class BaseProductoFormFilter extends BaseFormFilterDoctrine
 
     $this->setValidators(array(
       'nota_venta_id'        => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('NotaVenta'), 'column' => 'id')),
+      'foto'                 => new sfValidatorPass(array('required' => false)),
       'codigo'               => new sfValidatorPass(array('required' => false)),
       'nombre'               => new sfValidatorPass(array('required' => false)),
       'modelo'               => new sfValidatorPass(array('required' => false)),
@@ -63,6 +65,7 @@ abstract class BaseProductoFormFilter extends BaseFormFilterDoctrine
     return array(
       'id'                   => 'Number',
       'nota_venta_id'        => 'ForeignKey',
+      'foto'                 => 'Text',
       'codigo'               => 'Text',
       'nombre'               => 'Text',
       'modelo'               => 'Text',

@@ -1,1 +1,25 @@
 body { padding-top: 70px; }
+
+.sf_admin_form input[type="text"], .sf_admin_form input[type="password"], .sf_admin_form textarea {
+    background-color: white;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    display: block;
+
+    padding: 3px 10px 2px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    vertical-align: middle;
+    width: 300px !important;
+}
+
+#sf_admin_container .sf_admin_form_row {
+    border-bottom: 1px solid #ddd;
+    clear: both;
+    padding: 10px;
+}
+.sf_admin_form_row {
+    min-height: 22px;
+}

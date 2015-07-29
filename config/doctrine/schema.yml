@@ -116,11 +116,12 @@ Producto:
   actAs: [Timestampable, Signable]
   columns:
     nota_venta_id:        {type: integer}
+    foto:                 {type: string(150), default: null}
     codigo:               {type: string(15)}
     nombre:               {type: string(250), notnull: true}
     modelo:               {type: string(250)}
     marca:                {type: string(250)}
-    detalle:              {type: string(250)}
+    detalle:              {type: string(350)}
     costo:                {type: integer, notnull: true}
     clasificacion_id:     {type: integer, notnull: true}
     sub_clasificacion_id: {type: integer, notnull: true}
