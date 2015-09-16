@@ -128,7 +128,7 @@ Producto:
   relations:
     Item:             {local: id, foreign: producto_id, type: many, foreignAlias: Producto}
     NotaVenta:        {local: nota_venta_id, foreign: id, type: many, foreignAlias: Producto}
-    Clasificacion:     {local: clasificacion_id, foreign: id, type: one, foreignAlias: Producto}
+    Clasificacion:    {local: clasificacion_id, foreign: id, type: one, foreignAlias: Producto}
     SubClasificacion: {local: sub_clasificacion_id, foreign: id, type: one, foreignAlias: Producto}
 
 FacturaCompra:

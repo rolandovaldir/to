@@ -143,7 +143,7 @@
 #sf_admin_container ul.sf_admin_td_actions li a
 {
   padding-left: 20px;
-  background: url(../images/default.png) no-repeat 0 0;
+/*  background: url(../images/default.png) no-repeat 0 0;*/
 }
 
 #sf_admin_container ul li.sf_admin_action_new a
@@ -156,15 +156,15 @@
   background: url(../images/delete.png) no-repeat 0 0;
 }
 
-#sf_admin_container ul li.sf_admin_action_list a
+/*#sf_admin_container ul li.sf_admin_action_list a
 {
   background: url(../images/list.png) no-repeat 0 0;
-}
+}*/
 
-#sf_admin_container ul li.sf_admin_action_edit a
+/*#sf_admin_container ul li.sf_admin_action_edit a
 {
   background: url(../images/edit.png) no-repeat 0 0;
-}
+}*/
 
 #sf_admin_container .notice
 {

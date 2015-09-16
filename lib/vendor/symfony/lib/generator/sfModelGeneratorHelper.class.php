@@ -19,7 +19,7 @@ abstract class sfModelGeneratorHelper
 
   public function linkToEdit($object, $params)
   {
-    return '<li class="sf_admin_action_edit">'.link_to('<i class="fa fa-pencil fa-fw"></i> ' . __($params['label'], array(), 'sf_admin'), $this->getUrlForAction('edit'), $object, array('class' => 'btn btn-large btn-default')).'</li>';
+    return '<li class="sf_admin_action_edit">'.link_to('<i class="fa fa-pencil fa-fw"></i> ' . __($params['label'], array(), 'sf_admin'), $this->getUrlForAction('edit'), $object, array('class' => 'btn btn-large')).'</li>';
   }
 
   public function linkToDelete($object, $params)
@@ -51,6 +51,16 @@ abstract class sfModelGeneratorHelper
               </li>';
   }
 
+//  public function linkToSaveAndAdd($object, $params)
+//  {
+//    if (!$object->isNew())
+//    {
+//      return '';
+//    }
+//
+//    return '<li class="sf_admin_action_save_and_add"><input class="btn btn-success" type="submit" value="'.__($params['label'], array(), 'sf_admin').'" name="_save_and_add" /></li>';
+//  }
+
   public function linkToSaveAndAdd($object, $params)
   {
     if (!$object->isNew())
@@ -58,6 +68,10 @@ abstract class sfModelGeneratorHelper
       return '';
     }
 
-    return '<li class="sf_admin_action_save_and_add"><input class="btn btn-success" type="submit" value="'.__($params['label'], array(), 'sf_admin').'" name="_save_and_add" /></li>';
+      return '<li class="sf_admin_action_save">
+                <button type="submit" class="btn btn-success">
+                  <i class="fa fa-check"></i> Guardar y crear otro
+                </button>
+              </li>';
   }
 }

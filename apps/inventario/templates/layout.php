@@ -37,28 +37,15 @@
       </nav>
     </header>
     
-    <div class="container-fluid">
-      <?php if ($sf_user->hasFlash('notice')): ?>
-        <div class="flash_notice">
-          <?php echo $sf_user->getFlash('notice') ?>
-        </div>
-      <?php endif; ?>
-
-      <?php if ($sf_user->hasFlash('error')): ?>
-        <div class="flash_error">
-          <?php echo $sf_user->getFlash('error') ?>
-        </div>
-      <?php endif; ?>
-      
-      <?php echo $sf_content ?>
-    </div>
-      
-    <footer>
-      <div class="footer">
-        <div class="container">
-          <p class="text-muted">TakeOff - Soluciones Tecnológicas.</p>
-        </div>
+    <div class="container">
+      <div class="col-md-11 panel-central">
+        <?php echo $sf_content ?>
       </div>
-    </footer>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted">TakeOff - Soluciones Tecnológicas.</p>
+      </div>
+    </div>
   </body>
 </html>

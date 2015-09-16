@@ -7,7 +7,7 @@
   [?php endif; ?]
 
   <form action="[?php echo url_for('<?php echo $this->getUrlForAction('collection') ?>', array('action' => 'filter')) ?]" method="post">
-    <table cellspacing="0" class="table">
+    <table cellspacing="0" class="table-condensed">
       <tfoot>
         <tr>
           <td colspan="2">

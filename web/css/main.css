@@ -1,5 +1,3 @@
-body { padding-top: 70px; }
-
 .sf_admin_form input[type="text"], .sf_admin_form input[type="password"], .sf_admin_form textarea {
     background-color: white;
     background-image: none;
@@ -20,6 +18,29 @@ body { padding-top: 70px; }
     clear: both;
     padding: 10px;
 }
+
 .sf_admin_form_row {
     min-height: 22px;
+}
+
+#sf_admin_bar
+{
+  float: none;
+  margin-left: 0px;
+}
+
+#sf_admin_container th{
+    color: #fff;
+    background-color: #2e6da4;
+    white-space: nowrap;
+}
+
+#sf_admin_container th a{
+    color: #fff;
+    white-space: nowrap;
+}
+
+
+ul li {
+    list-style: outside none none;
 }

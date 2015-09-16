@@ -16,8 +16,11 @@ generator:
       fields:  ~
       list:    
         title: Lista de productos
+        display: [codigo, nombre, modelo, marca, costo]
         batch_actions:  {}
         actions: {}
+        object_actions:
+          _edit: ~
       filter:  
         display: [codigo, modelo, marca]
       form: ~
@@ -30,4 +33,4 @@ generator:
         title: Registro de productos
         actions:
           _save: ~ 
-          _save_and_add: ~ 
+          _save_and_add: ~
