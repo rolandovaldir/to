@@ -13,6 +13,11 @@ require_once dirname(__FILE__).'/../lib/productosGeneratorHelper.class.php';
  */
 class productosActions extends autoProductosActions
 {
+  public function executeMostrar(sfWebRequest $request)
+  {
+      $this->producto = $this->getRoute()->getObject();        
+  }
+  
   protected function processForm(sfWebRequest $request, sfForm $form)
   {
     $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
@@ -21,10 +26,8 @@ class productosActions extends autoProductosActions
       $notice = $form->getObject()->isNew() ? 'The item was created successfully.' : 'The item was updated successfully.';
 
       try {
-        for ($x = 1; $x <= $form->getValue('cantidad'); $x++)
-        {
+          $cantidad = $form->getValue('cantidad');
           $producto = $form->save();
-        }
       } catch (Doctrine_Validator_Exception $e) {
 
         $errorStack = $form->getObject()->getErrorStack();
@@ -51,7 +54,8 @@ class productosActions extends autoProductosActions
       {
         $this->getUser()->setFlash('notice', $notice);
 
-        $this->redirect(array('sf_route' => 'producto_edit', 'sf_subject' => $producto));
+        $this->getUser()->setFlash('paso_correcto', ' La acción fue realizada correctamente.');
+        $this->redirect('productos/mostrar?id=' . $producto->getId());
       }
     }
     else
